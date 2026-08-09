@@ -1,8 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
 
@@ -20,9 +18,3 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run build
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: site-dist
-          path: dist
-          if-no-files-found: error
