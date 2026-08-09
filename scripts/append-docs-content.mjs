@@ -603,6 +603,4 @@ if (!s.endsWith(',')) s += ','
 s += `\n${extra}}\n`
 
 writeFileSync(path, s)
-console.log('pages total keys check...')
-const mod = await import(path.href + '?t=' + Date.now()).catch(() => null)
 console.log('written entries:', Object.keys(pages).length)
