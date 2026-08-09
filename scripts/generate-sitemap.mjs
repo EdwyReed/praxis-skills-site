@@ -19,10 +19,11 @@ if (slugs.length === 0) {
 }
 
 /** @type {{ path: string, changefreq: string, priority: string }[]} */
+// Trailing slash on docs paths matches GitHub Pages directory indexes (HTTP 200, no 301).
 const routes = [
   { path: '/', changefreq: 'weekly', priority: '1.0' },
   ...slugs.map((slug) => ({
-    path: `/docs/${slug}`,
+    path: `/docs/${slug}/`,
     changefreq: 'weekly',
     priority: slug === 'get-started/introduction' ? '0.9' : '0.7',
   })),
