@@ -37,7 +37,7 @@ export function SkillDemoPlayer({
         fps={DEMO_FPS}
         style={{ width: '100%', aspectRatio: `${DEMO_WIDTH} / ${DEMO_HEIGHT}` }}
         controls={false}
-        loop={false}
+        loop
         autoPlay
         acknowledgeRemotionLicense
       />

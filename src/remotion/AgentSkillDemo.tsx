@@ -1,7 +1,7 @@
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from 'remotion'
 import type { SkillDemoLine } from '../data/skills'
 
-/** Play once: typewriter forward, then hold final frame. No loop / no rewind. */
+/** Typewriter agent session; Player loops the composition from frame 0. */
 export const DEMO_FPS = 30
 export const DEMO_DURATION = 360
 export const DEMO_WIDTH = 960
@@ -181,7 +181,7 @@ function LineRow({
 }
 
 /**
- * Realistic agent session chrome. Plays once and stays on the final frame.
+ * Realistic agent session chrome. Designed to loop cleanly via Remotion Player.
  */
 export function AgentSkillDemo({ skillTitle, cwd, lines }: AgentSkillDemoProps) {
   const frame = useCurrentFrame()
