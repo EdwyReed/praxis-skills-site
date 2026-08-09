@@ -1,0 +1,15 @@
+schema: praxis-skills/v1
+
+packages:
+  - id: leonxlnx-taste-skill
+    requirement: recommended
+    role: primary-frontend-direction
+    source:
+      type: git
+      url: https://github.com/Leonxlnx/taste-skill
+      revision: e988add20dab0fa97d7a76781c48961c8184288e
+    skills:
+      - gpt-taste
+      - design-taste-frontend
+    rationale: Marketing and visual iteration on this site use the Taste Skill family. gpt-taste is the shipped primary for layout and motion; design-taste-frontend is the family default when switching primary. Pin matches praxis-skills distribution/taste-skill.json.
+    applies_when: Frontend visual design, redesign, landing-section layout, or motion-direction work on the marketing site.
