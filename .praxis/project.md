@@ -1,6 +1,6 @@
 ---
 schema: praxis-project/v1
-status: needs-confirmation
+status: confirmed
 project_id: praxis-skills-site
 project_type: existing
 source: audit
@@ -127,7 +127,7 @@ The site is not the workflow package. It markets and documents the package. Cano
 
 | Field | Value |
 |-------|-------|
-| Status | needs-confirmation |
-| Confirmed by | — |
-| Confirmed on | — |
-| Material corrections | Audited from shipped site, README direction, and sibling package contracts. Awaiting owner confirmation of Core Contract, design route (`gpt-taste` primary), and open questions. |
+| Status | confirmed |
+| Confirmed by | Project owner |
+| Confirmed on | 2026-08-09 |
+| Material corrections | Confirmed Core Contract as audited: significant visual scope; primary visual skill `gpt-taste`; Taste Skill family recommended via pinned `skills.yaml`; Clear Speech `default`; open questions left open (docs sync, host/domain, post-beta CTAs, SEO/analytics). |
