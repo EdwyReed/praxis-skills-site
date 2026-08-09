@@ -27,11 +27,8 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
+      # prebuild → sitemap; build → vite + prerender SPA routes as real 200 paths
       - run: npm run build
-
-      # SPA fallback so /docs/* refreshes work on static hosting
-      - name: Add SPA 404 fallback
-        run: cp dist/index.html dist/404.html
 
       - uses: actions/upload-pages-artifact@v3
         with:
