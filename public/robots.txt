@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://praxis.velryx.cc/sitemap.xml
+Sitemap: https://praxis.velryx.cc/sitemap.txt
